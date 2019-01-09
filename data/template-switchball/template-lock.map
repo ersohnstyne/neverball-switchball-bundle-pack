@@ -1,0 +1,28 @@
+
+// entity 0
+{
+"classname" "func_train"
+// brush 0
+{
+( 192 96 32 ) ( 192 -96 32 ) ( 184 96 32 ) mtrl/red 0 -0 0 0.5 0.5 0 0 0
+( 192 96 32 ) ( 184 96 32 ) ( 192 96 -8 ) mtrl/red 0 0 0 0.5 0.5 0 0 0
+( 192 96 32 ) ( 192 96 -8 ) ( 192 -96 32 ) mtrl/red 0 0 0 0.5 0.5 0 0 0
+( 184 -96 0 ) ( 192 -96 0 ) ( 184 96 0 ) mtrl/red 0 -0 0 0.5 0.5 0 0 0
+( 184 -96 -8 ) ( 184 -96 32 ) ( 192 -96 -8 ) mtrl/red 0 0 0 0.5 0.5 0 0 0
+( 184 -96 -8 ) ( 184 96 -8 ) ( 184 -96 32 ) mtrl/red 0 0 0 0.5 0.5 0 0 0
+}
+}
+// entity 1
+{
+"classname" "path_corner"
+"origin" "256.000000 -128.000000 16.000000"
+"targetname" "locktempa"
+"target" "locktempb"
+"state" "0"
+}
+// entity 2
+{
+"classname" "path_corner"
+"origin" "256.000000 -128.000000 -16.000000"
+"targetname" "locktempb"
+}

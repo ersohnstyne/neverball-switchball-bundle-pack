@@ -1,0 +1,5 @@
+Switchball Classic
+A brand new Level Sets in Switchball\in 3D action-puzzle game\\Made by Sierra Online\Based on Neverball Open Source
+switchball
+shot-switchball/switchball-logo.jpg
+359999 359999 359999  0 0 0

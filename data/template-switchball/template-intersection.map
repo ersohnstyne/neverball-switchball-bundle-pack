@@ -1,0 +1,293 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+"message" "Streamed with Switchball"
+"song" "bgm/trackS1.ogg"
+"grad" "back/arendelle.png"
+"version" "1.0a"
+"author" "Ersohn Styne"
+"back" "map-back/arendelle.sol"
+"time" "360000.0"
+// brush 0
+{
+( 64 64 0 ) ( 64 -64 0 ) ( -64 64 0 ) mtrl/turf-blue 0 0 0 0.5 0.5 0 0 0
+( 72 192 16 ) ( -56 192 16 ) ( 72 192 -16 ) mtrl/edge-blue 0 0 0 0.5 0.5 0 0 0
+( 192 64 16 ) ( 192 64 -16 ) ( 192 -64 16 ) mtrl/edge-blue 0 0 0 0.5 0.5 0 0 0
+( -64 -64 -8 ) ( 64 -64 -8 ) ( -64 64 -8 ) mtrl/turf-grey 0 0 0 0.5 0.5 0 0 0
+( -104 -192 -16 ) ( -104 -192 16 ) ( 24 -192 -16 ) mtrl/edge-blue 64 0 0 0.5 0.5 0 0 0
+( -192 -56 -16 ) ( -192 72 -16 ) ( -192 -56 16 ) mtrl/edge-blue 64 0 0 0.5 0.5 0 0 0
+}
+// brush 1
+{
+( -192 96 32 ) ( -184 184 32 ) ( -184 96 32 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( -192 192 32 ) ( -184 184 0 ) ( -184 184 32 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( -184 96 0 ) ( -184 184 32 ) ( -184 184 0 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( -192 96 0 ) ( -184 184 0 ) ( -192 192 0 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( -192 96 -8 ) ( -192 96 0 ) ( -184 96 -8 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( -192 152 -8 ) ( -192 192 -8 ) ( -192 152 0 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+}
+// brush 2
+{
+( -96 184 32 ) ( -184 184 32 ) ( -96 192 32 ) mtrl/turf-orange 0 0 -90 0.5 -0.5 0 0 0
+( -184 184 32 ) ( -184 184 0 ) ( -192 192 32 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( -184 184 0 ) ( -184 184 32 ) ( -96 184 0 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( -192 192 0 ) ( -184 184 0 ) ( -96 192 0 ) mtrl/turf-orange 0 0 -90 0.5 -0.5 0 0 0
+( -96 184 -8 ) ( -96 192 0 ) ( -96 192 -8 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( -152 192 0 ) ( -192 192 -8 ) ( -152 192 -8 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+}
+// brush 3
+{
+( 96 192 32 ) ( 184 184 32 ) ( 96 184 32 ) mtrl/turf-orange 0 0 -90 0.5 0.5 0 0 0
+( 192 192 32 ) ( 184 184 0 ) ( 184 184 32 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( 96 184 0 ) ( 184 184 32 ) ( 184 184 0 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( 96 192 0 ) ( 184 184 0 ) ( 192 192 0 ) mtrl/turf-orange 0 0 -90 0.5 0.5 0 0 0
+( 96 192 -8 ) ( 96 192 0 ) ( 96 184 -8 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( 152 192 -8 ) ( 192 192 -8 ) ( 152 192 0 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+}
+// brush 4
+{
+( 184 96 32 ) ( 184 184 32 ) ( 192 96 32 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( 184 184 32 ) ( 184 184 0 ) ( 192 192 32 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( 184 184 0 ) ( 184 184 32 ) ( 184 96 0 ) mtrl/turf-orange -0 0 0 0.5 0.5 0 0 0
+( 192 192 0 ) ( 184 184 0 ) ( 192 96 0 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( 184 96 -8 ) ( 192 96 0 ) ( 192 96 -8 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( 192 152 0 ) ( 192 192 -8 ) ( 192 152 -8 ) mtrl/turf-orange -0 0 0 0.5 0.5 0 0 0
+}
+// brush 5
+{
+( -96 -192 32 ) ( -184 -184 32 ) ( -96 -184 32 ) mtrl/turf-orange 0 256 90 0.5 0.5 0 0 0
+( -192 -192 32 ) ( -184 -184 0 ) ( -184 -184 32 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( -96 -184 0 ) ( -184 -184 32 ) ( -184 -184 0 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( -96 -192 0 ) ( -184 -184 0 ) ( -192 -192 0 ) mtrl/turf-orange 0 256 90 0.5 0.5 0 0 0
+( -96 -192 -8 ) ( -96 -192 0 ) ( -96 -184 -8 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( -152 -192 -8 ) ( -192 -192 -8 ) ( -152 -192 0 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+}
+// brush 6
+{
+( -184 -96 32 ) ( -184 -184 32 ) ( -192 -96 32 ) mtrl/turf-orange 256 0 -0 0.5 -0.5 0 0 0
+( -184 -184 32 ) ( -184 -184 0 ) ( -192 -192 32 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( -184 -184 0 ) ( -184 -184 32 ) ( -184 -96 0 ) mtrl/turf-orange -0 0 0 -0.5 0.5 0 0 0
+( -192 -192 0 ) ( -184 -184 0 ) ( -192 -96 0 ) mtrl/turf-orange 256 0 -0 0.5 -0.5 0 0 0
+( -184 -96 -8 ) ( -192 -96 0 ) ( -192 -96 -8 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( -192 -152 0 ) ( -192 -192 -8 ) ( -192 -152 -8 ) mtrl/turf-orange -0 0 0 -0.5 0.5 0 0 0
+}
+// brush 7
+{
+( 192 -96 32 ) ( 184 -184 32 ) ( 184 -96 32 ) mtrl/turf-orange 0 0 180 0.5 0.5 0 0 0
+( 192 -192 32 ) ( 184 -184 0 ) ( 184 -184 32 ) mtrl/turf-orange -0 0 0 -0.5 0.5 0 0 0
+( 184 -96 0 ) ( 184 -184 32 ) ( 184 -184 0 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( 192 -96 0 ) ( 184 -184 0 ) ( 192 -192 0 ) mtrl/turf-orange 0 0 180 0.5 0.5 0 0 0
+( 192 -96 -8 ) ( 192 -96 0 ) ( 184 -96 -8 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+( 192 -152 -8 ) ( 192 -192 -8 ) ( 192 -152 0 ) mtrl/turf-orange 0 0 0 -0.5 0.5 0 0 0
+}
+// brush 8
+{
+( 96 -184 32 ) ( 184 -184 32 ) ( 96 -192 32 ) mtrl/turf-orange 0 0 90 0.5 -0.5 0 0 0
+( 184 -184 32 ) ( 184 -184 0 ) ( 192 -192 32 ) mtrl/turf-orange -0 0 0 -0.5 0.5 0 0 0
+( 184 -184 0 ) ( 184 -184 32 ) ( 96 -184 0 ) mtrl/turf-orange -0 0 0 0.5 0.5 0 0 0
+( 192 -192 0 ) ( 184 -184 0 ) ( 96 -192 0 ) mtrl/turf-orange 0 0 90 0.5 -0.5 0 0 0
+( 96 -184 -8 ) ( 96 -192 0 ) ( 96 -192 -8 ) mtrl/turf-orange 0 0 0 0.5 0.5 0 0 0
+( 152 -192 0 ) ( 192 -192 -8 ) ( 152 -192 -8 ) mtrl/turf-orange -0 0 0 0.5 0.5 0 0 0
+}
+// brush 9
+{
+( -228 -224 -8 ) ( -4 0 -8 ) ( 0 -4 -8 ) mtrl/blue-gas 0 0 0 0.5 0.5 0 0 0
+( -4 0 -8 ) ( 0 -4 -12 ) ( 0 -4 -8 ) mtrl/blue-gas 0 8 0 0.5 0.5 0 0 0
+( -224 -228 -12 ) ( 0 -4 -8 ) ( 0 -4 -12 ) mtrl/blue-gas 0 8 0 0.5 0.5 0 0 0
+( -228 -224 -12 ) ( 0 -4 -12 ) ( -4 0 -12 ) mtrl/blue-gas 0 0 0 0.5 0.5 0 0 0
+( -224 -228 -4 ) ( -228 -224 -12 ) ( -228 -224 -4 ) mtrl/blue-gas 0 8 0 0.5 0.5 0 0 0
+( -228 -224 -8 ) ( -4 0 -12 ) ( -4 0 -8 ) mtrl/blue-gas 0 8 0 0.5 0.5 0 0 0
+}
+// brush 10
+{
+( 0 4 -8 ) ( 224 228 -8 ) ( 228 224 -8 ) mtrl/blue-gas 24 8 0 0.5 0.5 0 0 0
+( 224 228 -8 ) ( 228 224 -12 ) ( 228 224 -8 ) mtrl/blue-gas 24 8 0 0.5 0.5 0 0 0
+( 4 0 -12 ) ( 228 224 -8 ) ( 228 224 -12 ) mtrl/blue-gas 24 8 0 0.5 0.5 0 0 0
+( 0 4 -12 ) ( 228 224 -12 ) ( 224 228 -12 ) mtrl/blue-gas 24 8 0 0.5 0.5 0 0 0
+( 4 0 -4 ) ( 0 4 -12 ) ( 0 4 -4 ) mtrl/blue-gas 24 8 0 0.5 0.5 0 0 0
+( 0 4 -8 ) ( 224 228 -12 ) ( 224 228 -8 ) mtrl/blue-gas 24 8 0 0.5 0.5 0 0 0
+}
+// brush 11
+{
+( -224 228 -8 ) ( 0 4 -8 ) ( -4 0 -8 ) mtrl/blue-gas 0 0 -90 0.5 0.5 0 0 0
+( 0 4 -8 ) ( -4 0 -12 ) ( -4 0 -8 ) mtrl/blue-gas 24 8 0 0.5 0.5 0 0 0
+( -228 224 -12 ) ( -4 0 -8 ) ( -4 0 -12 ) mtrl/blue-gas 24 8 0 -0.5 0.5 0 0 0
+( -224 228 -12 ) ( -4 0 -12 ) ( 0 4 -12 ) mtrl/blue-gas 0 0 -90 0.5 0.5 0 0 0
+( -228 224 -4 ) ( -224 228 -12 ) ( -224 228 -4 ) mtrl/blue-gas 24 8 0 0.5 0.5 0 0 0
+( -224 228 -8 ) ( 0 4 -12 ) ( 0 4 -8 ) mtrl/blue-gas 8 8 0 -0.5 0.5 0 0 0
+}
+// brush 12
+{
+( 4 0 -8 ) ( 228 -224 -8 ) ( 224 -228 -8 ) mtrl/blue-gas 24 8 -90 0.5 0.5 0 0 0
+( 228 -224 -8 ) ( 224 -228 -12 ) ( 224 -228 -8 ) mtrl/blue-gas 0 8 0 0.5 0.5 0 0 0
+( 0 -4 -12 ) ( 224 -228 -8 ) ( 224 -228 -12 ) mtrl/blue-gas 16 8 0 -0.5 0.5 0 0 0
+( 4 0 -12 ) ( 224 -228 -12 ) ( 228 -224 -12 ) mtrl/blue-gas 24 8 -90 0.5 0.5 0 0 0
+( 0 -4 -4 ) ( 4 0 -12 ) ( 4 0 -4 ) mtrl/blue-gas 0 8 0 0.5 0.5 0 0 0
+( 4 0 -8 ) ( 228 -224 -12 ) ( 228 -224 -8 ) mtrl/blue-gas 0 8 0 -0.5 0.5 0 0 0
+}
+}
+// entity 1
+{
+"classname" "light"
+"origin" "-160.000000 160.000000 16.000000"
+"light" "1"
+}
+// entity 2
+{
+"classname" "light"
+"origin" "160.000000 160.000000 16.000000"
+"light" "1"
+}
+// entity 3
+{
+"classname" "light"
+"origin" "160.000000 -160.000000 16.000000"
+"light" "1"
+}
+// entity 4
+{
+"classname" "light"
+"origin" "-160.000000 -160.000000 16.000000"
+"light" "1"
+}
+// entity 5
+{
+"classname" "info_null"
+"origin" "-224.000000 -224.000000 16.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 6
+{
+"classname" "info_null"
+"origin" "-224.000000 -224.000000 64.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 7
+{
+"classname" "info_null"
+"origin" "-224.000000 -224.000000 112.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 8
+{
+"classname" "info_null"
+"origin" "-224.000000 -224.000000 160.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 9
+{
+"classname" "info_null"
+"origin" "-224.000000 224.000000 16.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 10
+{
+"classname" "info_null"
+"origin" "-224.000000 224.000000 64.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 11
+{
+"classname" "info_null"
+"origin" "-224.000000 224.000000 112.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 12
+{
+"classname" "info_null"
+"origin" "-224.000000 224.000000 160.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 13
+{
+"classname" "info_null"
+"origin" "224.000000 224.000000 16.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 14
+{
+"classname" "info_null"
+"origin" "224.000000 224.000000 64.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 15
+{
+"classname" "info_null"
+"origin" "224.000000 224.000000 112.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 16
+{
+"classname" "info_null"
+"origin" "224.000000 224.000000 160.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 17
+{
+"classname" "info_null"
+"origin" "224.000000 -224.000000 16.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 18
+{
+"classname" "info_null"
+"origin" "224.000000 -224.000000 64.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 19
+{
+"classname" "info_null"
+"origin" "224.000000 -224.000000 112.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 20
+{
+"classname" "info_null"
+"origin" "224.000000 -224.000000 160.000000"
+"image" "mtrl/orb-blue"
+"width" "0.25"
+"height" "0.25"
+}
+// entity 21
+{
+"classname" "target_position"
+"origin" "0.000000 0.000000 88.000000"
+"targetname" "tcam"
+}
+// entity 22
+{
+"classname" "info_player_intermission"
+"origin" "-360.000000 -576.000000 240.000000"
+"target" "tcam"
+}
