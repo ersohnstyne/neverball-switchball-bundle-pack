@@ -8,7 +8,7 @@ This tower looks like this:
 ![template-tower](img/examples/tower.jpg)
 
 ## Magnet transport
-Towers is impressive, but it must be placed only large intersections.
+Transport is impressive, but it must be placed only large intersections.
 
 To install transporters, you must place only straight and never use some edges.
 
