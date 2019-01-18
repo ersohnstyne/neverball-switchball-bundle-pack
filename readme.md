@@ -11,9 +11,9 @@ This includes:
 ## Beta items
 Checkpoints is important but under development.
 
-This checkpoints will give you,
+These checkpoints will give you,
 where you have located for each rings once you through them.
 
 Here are the follows:
-* This Modes may not work in Challenge Mode.
+* These Modes may not work in Challenge Mode.
 * If the ball falls, you will return to the last position.
