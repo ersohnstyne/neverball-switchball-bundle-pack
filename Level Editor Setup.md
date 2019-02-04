@@ -13,10 +13,3 @@ If you don't have it:
 
 And obivously check back into Neverball editor where you just get started:
 * [Asset creation](https://github.com/Neverball/neverball-docs)
-
-## Pull requests
-If you done this level, you can upload the *.map file
-to the directory "data/map-switchball" and create pull request.
-Forked repositories will merge directly to me, once you've send.
-
-Your messages will appear here once has been merged.
