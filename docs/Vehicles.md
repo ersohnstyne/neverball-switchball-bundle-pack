@@ -1,11 +1,11 @@
 # Switchball vehicles
-These vehicles is a helicopter. It contains only joined behind or in front of edges.
+These vehicles is a gyrocopter. It contains only joined behind or in front of edges.
 If you want to start with any location, you need to place over the normal intersection.
 
 You can place only one start and end position per vehicles.
 
 And the last things:
-* Never place outside the helicopters with start and goal position!
+* Never place outside the gyrocopters with start and goal position!
 
 ### Start position
 This is the start position.
