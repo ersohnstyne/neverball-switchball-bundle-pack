@@ -1,2 +1,6 @@
-data/map-back/*.sol
-data/map-switchball/*.sol
+# Extensions
+*.sol
+
+# Directories
+/.vs/*
+/.tx/*
