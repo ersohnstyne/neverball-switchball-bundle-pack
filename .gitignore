@@ -4,3 +4,6 @@
 # Directories
 /.vs/*
 /.tx/*
+
+# Images that using non-alpaha
+/gui/*.jpg
