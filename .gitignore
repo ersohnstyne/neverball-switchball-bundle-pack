@@ -1,5 +1,6 @@
 # Extensions
 *.sol
+*.xcf
 
 # Directories
 /.vs/*
