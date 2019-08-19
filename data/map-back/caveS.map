@@ -1,0 +1,241 @@
+{
+"classname" "worldspawn"
+}
+
+// ************************* Cave entrance ******************************
+
+{
+"classname" "info_null"
+"image" "png/cave-entrance"
+"xrot" "-3"
+"yrot" "22.5"
+"width" "80"
+"height" "76.5"
+"dist" "300"
+"flag" "1"
+}
+
+// ************************ Start Crystals ******************************
+
+{
+"classname" "info_null"
+"image" "png/crystal2"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-30.29952 15.0 -5.0"
+"yrot" "353.31384 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-31.152851 15.0 -5.0"
+"yrot" "136.62964 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-38.575928 15.0 -5.0"
+"yrot" "198.74336 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-36.98945 15.0 -5.0"
+"yrot" "114.30902 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-26.13592 15.0 -5.0"
+"yrot" "333.71854 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal2"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-30.04674 15.0 -5.0"
+"yrot" "79.39146 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-35.95177 15.0 -5.0"
+"yrot" "122.02328 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-25.14501 15.0 -5.0"
+"yrot" "322.18393 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal2"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-35.06863 15.0 -5.0"
+"yrot" "171.04288 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal2"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-28.49056 15.0 -5.0"
+"yrot" "41.659824 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal1"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-32.09176 15.0 -5.0"
+"yrot" "173.20897 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal4"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-27.14197 15.0 -5.0"
+"yrot" "287.5155 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal1"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-31.330471 15.0 -5.0"
+"yrot" "68.02026 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-33.86428 15.0 -5.0"
+"yrot" "68.32632 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal1"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-34.36271 15.0 -5.0"
+"yrot" "268.5364 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal1"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-33.018738 15.0 -5.0"
+"yrot" "86.10096 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal2"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-37.17385 15.0 -5.0"
+"yrot" "291.01538 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-38.26113 15.0 -5.0"
+"yrot" "318.71164 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal3"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-25.97709 15.0 -5.0"
+"yrot" "105.95474 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+{
+"classname" "info_null"
+"image" "png/crystal1"
+"width" "7.0 0.0 -0.25"
+"height" "7.0 0.0 -0.25"
+"xrot" "-34.66901 15.0 -5.0"
+"yrot" "107.101585 0.0 0.0"
+"dist" "130.0"
+"time" "0.0"
+"flag" "1"
+}
+
+// ************************* End Crystals *******************************
