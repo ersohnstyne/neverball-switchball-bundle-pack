@@ -4,14 +4,14 @@ Create new level first before you import the structure.
 ## Level details
 This is the level for Neverball. If you want to make some levels, Make sure that your details as follows:
 
-Name                   | Example                  | Requiredment
------------------------|--------------------------|------------
-Songs                  | bgm/trackS1.ogg          | Must be insert an uppercase "S" before using numbers (1 - 4)
-Gradient               | back/hills.png           | -
-Author                 | PennySchloss             | The author name, that you've got the GitHub account
-Background enviroments | map-back/cloud.map       | -
-Time limit             | 0                        | Time limit must be set to zero!
-Shot path              | shot/your-screenshot.jpg | Screenshots must be specified (such as 1024 x 600 JPG or JPEG)
+Field name              | Notes                                                                                
+------------------------|--------------------------------------------------------------------------------------
+Songs                   | Required (Uppercase letter "S" must be insert before using numbers. In range: 1 - 5.)
+Gradient                | Required (Uppercase letter "S" must be insert after gradient name)
+Author                  | Optional
+Background enviroments  | Required (both filename for backgrounds recommended: skyS.png + skyS.sol)
+Time limit              | Required (Time limit must be set to zero: 0:00.00)
+Best time / Fast unlock | Required (at least three fields except most coins)
 
 Level descriptions is optional.
 
