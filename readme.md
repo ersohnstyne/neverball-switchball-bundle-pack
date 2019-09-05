@@ -10,11 +10,6 @@ This includes:
 * A new intersections
 
 ## Beta items
-Checkpoints is important but under development.
-
-These checkpoints will give you,
-where you have located for each rings once you through them.
-
-Here are the follows:
-* These Modes may not work in Challenge Mode.
-* If the ball falls, you will return to the last position.
+Checkpoints is fully important. Here are the follows:
+* Respawn locations may not work in Challenge Mode.
+* If the ball falls, it will return to the last position.
