@@ -8,3 +8,12 @@
 
 # Images that using non-alpaha
 /gui/*.jpg
+
+# Keep the video files on the local computer
+*.mp4
+
+# Raw text files
+/*.txt
+
+# Others
+/*.ogg
