@@ -2,13 +2,6 @@
 // entity 0
 {
 "classname" "worldspawn"
-"message" "Streamed with Switchball"
-"song" "bgm/trackS1.ogg"
-"grad" "back/arendelle.png"
-"version" "1.0a"
-"author" "Ersohn Styne"
-"back" "map-back/arendelle.sol"
-"time" "360000.0"
 // brush 0
 {
 ( 128 0 5 ) ( 128 -128 5 ) ( 0 0 5 ) mtrl/timer 128 128 0 0.5 0.5 0 0 0

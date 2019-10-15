@@ -2,13 +2,6 @@
 // entity 0
 {
 "classname" "worldspawn"
-"message" "Streamed with Switchball"
-"back" "map-back/skyS.sol"
-"grad" "back/skyS.png"
-"song" "bgm/trackS1.ogg"
-"author" "Ersohn Styne"
-"time" "360000"
-"version" "1.0a"
 // brush 0
 {
 ( 160 4 -30 ) ( 160 0 -30 ) ( -160 4 -30 ) mtrl/rail 0 0 0 0.5 0.5 0 0 0

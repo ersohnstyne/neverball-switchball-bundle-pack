@@ -2,13 +2,6 @@
 // entity 0
 {
 "classname" "worldspawn"
-"message" "Streamed with Switchball"
-"song" "bgm/trackS1.ogg"
-"grad" "back/arendelle.png"
-"version" "1.0a"
-"author" "Ersohn Styne"
-"back" "map-back/arendelle.sol"
-"time" "360000.0"
 // brush 0
 {
 ( 64 64 0 ) ( 64 -64 0 ) ( -64 64 0 ) mtrl/turf-blue 0 0 0 0.5 0.5 0 0 0

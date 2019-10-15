@@ -2,14 +2,6 @@
 // entity 0
 {
 "classname" "worldspawn"
-"message" "Streamed with Switchball"
-"song" "bgm/trackS1.ogg"
-"grad" "back/arendelle.png"
-"version" "1.0a"
-"author" "Ersohn Styne"
-"back" "map-back/arendelle.sol"
-"time" "360000.0"
-"shot" "shot-switchball/screenshot.jpg"
 // brush 0
 {
 ( 24 0 1 ) ( 23.8844299316 2.3524169922 1 ) ( 24 0 2 ) mtrl/plank-small 118 0 90 0.1000000015 0.1000000015 0 0 0

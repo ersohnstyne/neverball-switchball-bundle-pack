@@ -2,14 +2,6 @@
 // entity 0
 {
 "classname" "worldspawn"
-"message" "Two intersections and three switches\Streamed with Switchball"
-"song" "bgm/track7.ogg"
-"grad" "back/arendelle.png"
-"version" "1.0a"
-"author" "Ersohn Styne"
-"back" "map-back/arendelle.sol"
-"time" "360000.0"
-"shot" "shot-arendelle-laboratories/sky01.jpg"
 // brush 0
 {
 ( -64 -32 0 ) ( -24 32 0 ) ( 64 -32 0 ) mtrl/turf-brown 192 0 -90 0.5 0.5 0 0 0
