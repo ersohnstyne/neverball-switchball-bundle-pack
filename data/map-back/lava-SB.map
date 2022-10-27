@@ -487,7 +487,7 @@
 // ************************ Lava mountains ******************************
 {
 "classname" "info_null"
-"image"     "png/mountainsS1"
+"image"     "png/mountains-SB1"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -499,7 +499,7 @@
 }
 {
 "classname" "info_null"
-"image"     "png/mountainsS1"
+"image"     "png/mountains-SB1"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -511,7 +511,7 @@
 }
 {
 "classname" "info_null"
-"image"     "png/mountainsS3"
+"image"     "png/mountains-SB3"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -523,7 +523,7 @@
 }
 {
 "classname" "info_null"
-"image"     "png/mountainsS1"
+"image"     "png/mountains-SB1"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -535,7 +535,7 @@
 }
 {
 "classname" "info_null"
-"image"     "png/mountainsS3"
+"image"     "png/mountains-SB3"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -547,7 +547,7 @@
 }
 {
 "classname" "info_null"
-"image"     "png/mountainsS3"
+"image"     "png/mountains-SB3"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -559,7 +559,7 @@
 }
 {
 "classname" "info_null"
-"image"     "png/mountainsS3"
+"image"     "png/mountains-SB3"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -571,7 +571,7 @@
 }
 {
 "classname" "info_null"
-"image"     "png/mountainsS3"
+"image"     "png/mountains-SB3"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -583,7 +583,7 @@
 }
 {
 "classname" "info_null"
-"image"     "png/mountainsS2"
+"image"     "png/mountains-SB2"
 "width"     "   +54.59553     +0.00000     +0.00000"
 "height"    "   +12.00000     +0.00000     +0.00000"
 "xrot"      "   -12.00000     +0.00000     +0.00000"
@@ -597,7 +597,7 @@
 // ************************** Lava drips ********************************
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.096489 15.0 -5.0"
@@ -608,7 +608,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.07317 15.0 -5.0"
@@ -619,7 +619,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.1744 15.0 -5.0"
@@ -630,7 +630,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.88725 15.0 -5.0"
@@ -641,7 +641,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.45624 15.0 -5.0"
@@ -652,7 +652,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.51324 15.0 -5.0"
@@ -663,7 +663,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.77084 15.0 -5.0"
@@ -674,7 +674,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.31207 15.0 -5.0"
@@ -685,7 +685,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.73333 15.0 -5.0"
@@ -696,7 +696,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.39435 15.0 -5.0"
@@ -707,7 +707,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.3671 15.0 -5.0"
@@ -718,7 +718,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.7001 15.0 -5.0"
@@ -729,7 +729,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.59201 15.0 -5.0"
@@ -740,7 +740,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.52221 15.0 -5.0"
@@ -751,7 +751,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.58396 15.0 -5.0"
@@ -762,7 +762,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.74178 15.0 -5.0"
@@ -773,7 +773,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.54939 15.0 -5.0"
@@ -784,7 +784,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.85823 15.0 -5.0"
@@ -795,7 +795,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.37034 15.0 -5.0"
@@ -806,7 +806,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.33114 15.0 -5.0"
@@ -817,7 +817,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.25513 15.0 -5.0"
@@ -828,7 +828,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.90043 15.0 -5.0"
@@ -839,7 +839,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.45479 15.0 -5.0"
@@ -850,7 +850,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.09157 15.0 -5.0"
@@ -861,7 +861,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.9669 15.0 -5.0"
@@ -872,7 +872,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.5702 15.0 -5.0"
@@ -883,7 +883,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.76501 15.0 -5.0"
@@ -894,7 +894,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.31199 15.0 -5.0"
@@ -905,7 +905,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.40223 15.0 -5.0"
@@ -916,7 +916,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.98486 15.0 -5.0"
@@ -927,7 +927,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.41958 15.0 -5.0"
@@ -938,7 +938,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.21652 15.0 -5.0"
@@ -949,7 +949,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.32596 15.0 -5.0"
@@ -960,7 +960,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.58226 15.0 -5.0"
@@ -971,7 +971,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.38096 15.0 -5.0"
@@ -982,7 +982,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.59032 15.0 -5.0"
@@ -993,7 +993,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.43553 15.0 -5.0"
@@ -1004,7 +1004,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.43621 15.0 -5.0"
@@ -1015,7 +1015,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.92216 15.0 -5.0"
@@ -1026,7 +1026,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.76628 15.0 -5.0"
@@ -1037,7 +1037,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.79044 15.0 -5.0"
@@ -1048,7 +1048,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.88485 15.0 -5.0"
@@ -1059,7 +1059,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.90026 15.0 -5.0"
@@ -1070,7 +1070,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.66214 15.0 -5.0"
@@ -1081,7 +1081,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.04775 15.0 -5.0"
@@ -1092,7 +1092,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.43877 15.0 -5.0"
@@ -1103,7 +1103,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.51829 15.0 -5.0"
@@ -1114,7 +1114,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.47324 15.0 -5.0"
@@ -1125,7 +1125,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.97669 15.0 -5.0"
@@ -1136,7 +1136,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.18634 15.0 -5.0"
@@ -1147,7 +1147,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.5466 15.0 -5.0"
@@ -1158,7 +1158,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.29693 15.0 -5.0"
@@ -1169,7 +1169,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.19775 15.0 -5.0"
@@ -1180,7 +1180,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.13131 15.0 -5.0"
@@ -1191,7 +1191,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.84549 15.0 -5.0"
@@ -1202,7 +1202,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.26574 15.0 -5.0"
@@ -1213,7 +1213,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.02593 15.0 -5.0"
@@ -1224,7 +1224,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.328289 15.0 -5.0"
@@ -1235,7 +1235,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.57669 15.0 -5.0"
@@ -1246,7 +1246,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.48233 15.0 -5.0"
@@ -1257,7 +1257,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.16948 15.0 -5.0"
@@ -1268,7 +1268,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.58804 15.0 -5.0"
@@ -1279,7 +1279,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.00457 15.0 -5.0"
@@ -1290,7 +1290,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-21.73374 15.0 -5.0"
@@ -1301,7 +1301,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-20.04008 15.0 -5.0"
@@ -1312,7 +1312,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.93857 15.0 -5.0"
@@ -1323,7 +1323,7 @@
 }
 {
 "classname" "info_null"
-"image" "png/lava-dripS"
+"image" "png/lava-drip-SB"
 "width" "1.0 0.0 -0.25"
 "height" "1.0 0.0 -0.25"
 "xrot" "-22.87897 15.0 -5.0"
