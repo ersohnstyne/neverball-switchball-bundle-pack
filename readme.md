@@ -2,6 +2,10 @@
 # Switchball Bundle Pack for Neverball
 ***Made by: PennySchloss***
 
+Pennyball | Neverball
+----------|----------
+<a href="https://discord.gg/qnJR263Hm2"><img src="https://img.shields.io/discord/886320472088797184?logo=discord"></a> | <a href="https://discord.gg/bmBfHKZaQR"><img src="https://img.shields.io/discord/334834250199072770?logo=discord"></a>
+
 A new extra bundle pack with brand new 3D action-puzzle game.
 
 This includes:
