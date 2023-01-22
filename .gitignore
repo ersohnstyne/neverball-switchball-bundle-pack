@@ -1,3 +1,8 @@
+# Autosaves
+/data/map-switchball/autosave/*
+/data/template-switchball/autosave/*
+*.autosave.map
+
 # Extensions
 *.sol
 *.xcf
@@ -6,7 +11,7 @@
 /.vs/*
 /.tx/*
 
-# Images that using non-alpaha
+# Images that using non-alpha
 /gui/*.jpg
 
 # Keep the video files on the local computer
