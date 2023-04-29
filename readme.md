@@ -16,4 +16,4 @@ This includes:
 ## Beta items
 Checkpoints is fully important. Here are the follows:
 * Respawn locations may not work in Challenge Mode.
-* If the ball falls, it will return to the last position.
+* If the ball falls, it will return to the last checkpoint.

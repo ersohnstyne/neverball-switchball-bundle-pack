@@ -8,19 +8,19 @@ If you want to add an timer, two first path corners is 0.1 seconds and idling is
 If you want to allocate timer range in timed switch, **use with calculator**.
 
 ## Magnet transport
-Transport must be placed only large intersections.
+Transport can be placed for large travels.
 
-To install transporters, you must place only straight and never use some edges.
+To install transporters, you must place the rail with only straight.
 
 The transport pattern looks like this:
 ![template-transporters](img/examples/magnet-transport.jpg)
 
-If you want to install elevators, more than one vertical rails are needed.
+If you want to install double deck or elevators, more than one rails are required.
 
-**NOTE:** Maximum vertical speed is up to 15 km/h. If you use the large floors, more rails is required that can attach, but polygon elevator floors such hollow are not allowed.
+**NOTE:** Maximum vertical speed is up to 15 km/h. If you use the large floors, 3 more rails is required that keeps horizontally, but polygon elevator floors such hollow are not allowed.
 
 ## Towers
-Towers must be placed on static floors or large intersections for best decorations.
+Towers can be placed on static floors or large intersections for best decorations.
 
 The placement pattern looks like this:
 ![template-tower](img/examples/tower.jpg)

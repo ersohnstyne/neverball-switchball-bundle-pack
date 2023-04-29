@@ -16,7 +16,7 @@ The model pattern looks like this:
 ### End position
 Requirements:
 - Radius must be set to "0.38".
-- Roof protection must installed to prevent topple over after finished the level.
+- Roof protection must installed to prevent leaving outside the gyrocopter after finished the level.
 - An ending route line like a file "template-depart.map" must be connected to the intersection.
 
 The model pattern looks like this:
@@ -27,7 +27,7 @@ You can also rotate the goal transport instead, but don't use start position, ot
 
 ## Checkpoints
 
-*This features is available only for 1.7 and later.*
+*This features is only for 1.7 and later.*
 
 If you want to make the longest level or respawn from where you left off, you can install checkpoint rings.
 
