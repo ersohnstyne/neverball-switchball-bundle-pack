@@ -1,5 +1,5 @@
 # Switchball simulated objects
-These are simulated objects:
+These templates are simulated objects, which came from Switchball and Switchball HD:
 
 ## Locked Fence
 Fence with locks must be placed on the bridge without rails.
@@ -13,6 +13,7 @@ Transport can be placed for large travels.
 To install transporters, you must place the rail with only straight.
 
 The transport pattern looks like this:
+
 ![template-transporters](img/examples/magnet-transport.jpg)
 
 If you want to install double deck or elevators, more than one rails are required.
@@ -23,4 +24,5 @@ If you want to install double deck or elevators, more than one rails are require
 Towers can be placed on static floors or large intersections for best decorations.
 
 The placement pattern looks like this:
+
 ![template-tower](img/examples/tower.jpg)

@@ -1,16 +1,18 @@
 # Switchball essentials
-These essential pack contains large gyrocopter, just like the air transport, and checkpoints, that will respawn the new one.
-You can place only one ball and goal per level, but placing outside the gyrocopter are not allowed.
+These essential template pack contains large gyrocopter, just like the air transport, and checkpoints, which came from Switchball and Switchball HD:
 
-If you want to start with any location, you need to place over the normal intersection.
+You can place only one player start and goal per level, but placing outside the gyrocopter are not allowed.
+
+It is not possible to start with any location except test mode. Each player start and goal requires airport gates.
 
 ## Main essentials
 
 ### Start position
 Requirements:
-- Air transport must be facing **NORTH** (with positive Y). See [original documentation](https://github.com/ersohnstyne/neverball-docs/blob/master/Entities.md#info_player_start), how to use design specifications.
+- Air transport must be facing **NORTH** in the NetRadiant (with positive Y). See [original documentation](https://github.com/ersohnstyne/neverball-docs/blob/master/Entities.md#info_player_start), how to use design specifications.
 
-The model pattern looks like this:
+The entity decoration in the NetRadiant looks like this:
+
 ![template-airtransport-start](img/examples/airtransport-start.jpg)
 
 ### End position
@@ -19,7 +21,8 @@ Requirements:
 - Roof protection must installed to prevent leaving outside the gyrocopter after finished the level.
 - An ending route line like a file "template-depart.map" must be connected to the intersection.
 
-The model pattern looks like this:
+The entity decoration in the NetRadiant looks like this:
+
 ![template-airtransport-end](img/examples/airtransport-end.jpg)
 
 ### Optional features
