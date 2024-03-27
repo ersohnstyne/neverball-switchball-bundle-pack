@@ -1,4 +1,4 @@
-![switchball-promo](img/promo/switchball-logo.jpg)
+![repos__logo_title](img/promo/logo_title.png)
 # Switchball Bundle Pack for Neverball
 ***Made by: PennySchloss***
 
