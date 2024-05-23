@@ -21,8 +21,8 @@ The player start decoration in the NetRadiant looks like this:
 ### Level exit
 Requirements:
 - Radius must be set to "0.38".
+- Goal beams must attached with gyrocopter together (for Neverball 1.7.0a and later).
 - Roof protection must installed to prevent leaving outside the gyrocopter after finished the level.
-- An ending route line like a file "template-depart.map" must be connected to the intersection.
 
 Optional:
 - Can also decorate more brushes on exteriors.
