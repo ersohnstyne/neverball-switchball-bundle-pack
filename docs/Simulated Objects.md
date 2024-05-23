@@ -12,17 +12,21 @@ Transport can be placed for large travels.
 
 To install transporters, you must place the rail with only straight.
 
-The transport pattern looks like this:
+The transport pattern in the game looks like this:
 
 ![template-transporters](img/examples/magnet-transport.jpg)
 
-If you want to install double deck or elevators, more than one rails are required.
+If you want to install double deck, elevators or escalators, more than one rails are required.
+
+The escalators in the NetRadiant looks like this (top-side view, requires NB 1.7.0a):
+
+![template-escalators](img/examples/escalators-quad-switch.jpg)
 
 **NOTE:** Maximum vertical speed is up to 15 km/h. If you use the large floors, 3 more rails is required that keeps horizontally, but polygon elevator floors such hollow are not allowed.
 
 ## Towers
 Towers can be placed on static floors or large intersections for best decorations.
 
-The placement pattern looks like this:
+The decoration in the game looks like this:
 
 ![template-tower](img/examples/tower.jpg)

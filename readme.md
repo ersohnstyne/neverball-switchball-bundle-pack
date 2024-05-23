@@ -13,7 +13,7 @@ This includes:
 * A new dynamic simulation
 * A new intersections
 
-## Beta items
+## Beta entities
 Checkpoints is fully important. Here are the follows:
-* Respawn locations may not work in Challenge Mode.
-* If the ball falls, it will return to the last checkpoint.
+* If the ball falls, it will return to the last checkpoint from where you left off.
+* All checkpoints will be disabled, if there's only one ball left.

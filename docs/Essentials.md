@@ -7,30 +7,36 @@ It is not possible to start with any location except test mode. Each player star
 
 ## Main essentials
 
-### Start position
+### Player start
 Requirements:
 - Air transport must be facing **NORTH** in the NetRadiant (with positive Y). See [original documentation](https://github.com/ersohnstyne/neverball-docs/blob/master/Entities.md#info_player_start), how to use design specifications.
 
-The entity decoration in the NetRadiant looks like this:
+Optional:
+- Can also decorate more brushes on exteriors.
+
+The player start decoration in the NetRadiant looks like this:
 
 ![template-airtransport-start](img/examples/airtransport-start.jpg)
 
-### End position
+### Level exit
 Requirements:
 - Radius must be set to "0.38".
 - Roof protection must installed to prevent leaving outside the gyrocopter after finished the level.
 - An ending route line like a file "template-depart.map" must be connected to the intersection.
 
-The entity decoration in the NetRadiant looks like this:
+Optional:
+- Can also decorate more brushes on exteriors.
+
+The level exit decoration in the NetRadiant looks like this:
 
 ![template-airtransport-end](img/examples/airtransport-end.jpg)
 
 ### Optional features
-You can also rotate the goal transport instead, but don't use start position, otherwise may not work for it.
+You can also rotate the level exit instead, but don't use start position, or start view angles .
 
 ## Checkpoints
 
-*This features is only for 1.7 and later.*
+*This entity features requires Pennyball 2.2.X and later with checkpoints.*
 
 If you want to make the longest level or respawn from where you left off, you can install checkpoint rings.
 
