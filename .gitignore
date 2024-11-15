@@ -17,6 +17,9 @@
 # Keep the video files on the local computer
 *.mp4
 
+# Backups
+*.bak
+
 # Raw text files
 /*.txt
 
