@@ -1,3 +1,7 @@
+# GITHUB WORKFLOWS
+/.github/workflows/*
+!/.github/workflows/*.yml
+
 # Autosaves
 /data/map-switchball/autosave/*
 /data/template-switchball/autosave/*
@@ -13,6 +17,11 @@
 
 # Images that using non-alpha
 /gui/*.jpg
+
+# Batch/Shell script files
+*.bat
+*.ps1
+*.sh
 
 # Keep the video files on the local computer
 *.mp4
