@@ -3,16 +3,14 @@
 name: Check Full Version Content
 
 on:
-#  pull_request:
-#    types: [opened, reopened, synchronize, ready_for_review]
-#    branches:
-#      - main
-#      - master
-#  pull_request_target:
-#    types: [opened, reopened, synchronize, ready_for_review]
-#    branches:
-#      - main
-#      - master
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches:
+      - master
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches:
+      - master
   workflow_dispatch:
 
 permissions:
@@ -32,7 +30,7 @@ jobs:
       - name: Check head source zone
         run: |
           if grep -RIn --exclude-dir=.git --exclude-dir=.github --exclude-dir=.gitea --exclude-dir=.forgejo --exclude-dir=.vs --exclude=checkwhole.sh "<<<< HEAD" .; then
-            echo "HEAD detected!";
+            echo "error: HEAD detected!";
             grep -RIn --exclude-dir=.git --exclude-dir=.github --exclude-dir=.gitea --exclude-dir=.forgejo --exclude-dir=.vs --exclude=checkwhole.sh "<<<< HEAD" .
             exit 1;
           fi
@@ -47,108 +45,117 @@ jobs:
                 echo "Found WGCL Operator!";
               fi
             else
-              echo "URL for WGCL not found in readme.md!";
+              echo "error: URL for WGCL not found in readme.md!";
               exit 1;
             fi
             if grep -RIn "discord.gg/qnJR263Hm2" readme.md; then
               echo "Found WGCL Discord Server!";
             else
-              echo "WGCL Discord Server not found!";
+              echo "error: WGCL Discord Server not found!";
               exit 1;
             fi
           else
-            echo "readme.md is missing!";
+            echo "error: readme.md is missing!";
             exit 1;
           fi
+
 
       # Check full version's readme image logo
       - name: Check readme image logo
         run: |
-          if [ -f "./img/promo/logo_title.png" ]; then echo "Found img/promo/logo_title.png!"; else echo "Missing file: img/promo/logo_title.png"; exit 1; fi
+          if [ -f "./img/promo/logo_title.png" ]; then echo "Found img/promo/logo_title.png!"; else echo "error: Missing file: img/promo/logo_title.png"; exit 1; fi
 
-      # Check full version's documentation files
-      - name: Check documentation files
+      # Check full version's repository documentation files
+      - name: Check repository documentation files
         run: |
-          if [ -f "./docs/Essentials.md" ]; then echo "Found essentials guide!"; else echo "Missing essentials guide!"; exit 1; fi
-          if [ -f "./docs/Import Validations.md" ]; then echo "Found import validation guide!"; else echo "Missing import validation guide!"; exit 1; fi
-          if [ -f "./docs/Level Editor Setup.md" ]; then echo "Found setup guide!"; else echo "Missing setup guide!"; exit 1; fi
-          if [ -f "./docs/Level Map.md" ]; then echo "Found level map guide!"; else echo "Missing level map guide!"; exit 1; fi
-          if [ -f "./docs/Simulated Objects.md" ]; then echo "Found simulated objects guide!"; else echo "Missing simulated objects guide!"; exit 1; fi
-          if [ -f "./docs/Static Objects.md" ]; then echo "Found static objects guide!"; else echo "Missing static objects guide!"; exit 1; fi
+          if [ -f "./readme.md" ]; then echo "Found readme.md!"; else echo "Missing readme.md!"; exit 1; fi
+          if [ -f "./contributing.md" ]; then echo "Found contributing.md!"; else echo "Missing contributing.md!"; exit 1; fi
+          if [ -f "./pull_request_template.md" ]; then echo "Found pull_request_template.md!"; else echo "Missing pull_request_template.md!"; exit 1; fi
+          if [ -f "./security.md" ]; then echo "Found security.md!"; else echo "Missing security.md!"; exit 1; fi
+
+      # Check full version's mapping documentation files
+      - name: Check mapping documentation files
+        run: |
+          if [ -f "./docs/Essentials.md" ]; then echo "Found essentials guide!"; else echo "error: Missing essentials guide!"; exit 1; fi
+          if [ -f "./docs/Import Validations.md" ]; then echo "Found import validation guide!"; else echo "error: Missing import validation guide!"; exit 1; fi
+          if [ -f "./docs/Level Editor Setup.md" ]; then echo "Found setup guide!"; else echo "error: Missing setup guide!"; exit 1; fi
+          if [ -f "./docs/Level Map.md" ]; then echo "Found level map guide!"; else echo "error: Missing level map guide!"; exit 1; fi
+          if [ -f "./docs/Simulated Objects.md" ]; then echo "Found simulated objects guide!"; else echo "error: Missing simulated objects guide!"; exit 1; fi
+          if [ -f "./docs/Static Objects.md" ]; then echo "Found static objects guide!"; else echo "error: Missing static objects guide!"; exit 1; fi
 
       # Check full version's background gradient files
       - name: Check background gradients (back)
         run: |
-          if [ -f "./data/back/sky-SB.png" ]; then echo "Found sky world file! (back)"; else echo "Missing file: back/sky-SB.png"; exit 1; fi
-          if [ -f "./data/back/ice-SB.png" ]; then echo "Found ice world file! (back)"; else echo "Missing file: back/ice-SB.png"; exit 1; fi
-          if [ -f "./data/back/cave-SB.png" ]; then echo "Found cave world file! (back)"; else echo "Missing file: back/cave-SB.png"; exit 1; fi
-          if [ -f "./data/back/clouds-SB.png" ]; then echo "Found cloud world file! (back)"; else echo "Missing file: back/clouds-SB.png"; exit 1; fi
-          if [ -f "./data/back/lava-SB.png" ]; then echo "Found lava world file! (back)"; else echo "Missing file: back/lava-SB.png"; exit 1; fi
+          if [ -f "./data/back/sky-SB.png" ]; then echo "Found sky world file! (back)"; else echo "error: Missing file: back/sky-SB.png"; exit 1; fi
+          if [ -f "./data/back/ice-SB.png" ]; then echo "Found ice world file! (back)"; else echo "error: Missing file: back/ice-SB.png"; exit 1; fi
+          if [ -f "./data/back/cave-SB.png" ]; then echo "Found cave world file! (back)"; else echo "error: Missing file: back/cave-SB.png"; exit 1; fi
+          if [ -f "./data/back/clouds-SB.png" ]; then echo "Found cloud world file! (back)"; else echo "error: Missing file: back/clouds-SB.png"; exit 1; fi
+          if [ -f "./data/back/lava-SB.png" ]; then echo "Found lava world file! (back)"; else echo "error: Missing file: back/lava-SB.png"; exit 1; fi
 
       # Check full version's background environment part files
       - name: Check background parts (png)
         run: |
-          if [ -f "./data/png/cave-entrance.png" ]; then echo "Found png/cave-entrance.png!"; else echo "Missing file: png/cave-entrance.png"; exit 1; fi
-          if [ -f "./data/png/crystal1.png" ]; then echo "Found png/crystal1.png!"; else echo "Missing file: png/crystal1.png"; exit 1; fi
-          if [ -f "./data/png/crystal2.png" ]; then echo "Found png/crystal2.png!"; else echo "Missing file: png/crystal2.png"; exit 1; fi
-          if [ -f "./data/png/crystal3.png" ]; then echo "Found png/crystal3.png!"; else echo "Missing file: png/crystal3.png"; exit 1; fi
-          if [ -f "./data/png/lava-drip-SB.png" ]; then echo "Found png/lava-drip-SB.png!"; else echo "Missing file: png/lava-drip-SB.png"; exit 1; fi
-          if [ -f "./data/png/mountains-SB1.png" ]; then echo "Found png/mountains-SB1.png!"; else echo "Missing file: png/mountains-SB1.png"; exit 1; fi
-          if [ -f "./data/png/mountains-SB2.png" ]; then echo "Found png/mountains-SB2.png!"; else echo "Missing file: png/mountains-SB2.png"; exit 1; fi
-          if [ -f "./data/png/mountains-SB3.png" ]; then echo "Found png/mountains-SB3.png!"; else echo "Missing file: png/mountains-SB3.png"; exit 1; fi
+          if [ -f "./data/png/cave-entrance.png" ]; then echo "Found png/cave-entrance.png!"; else echo "error: Missing file: png/cave-entrance.png"; exit 1; fi
+          if [ -f "./data/png/crystal1.png" ]; then echo "Found png/crystal1.png!"; else echo "error: Missing file: png/crystal1.png"; exit 1; fi
+          if [ -f "./data/png/crystal2.png" ]; then echo "Found png/crystal2.png!"; else echo "error: Missing file: png/crystal2.png"; exit 1; fi
+          if [ -f "./data/png/crystal3.png" ]; then echo "Found png/crystal3.png!"; else echo "error: Missing file: png/crystal3.png"; exit 1; fi
+          if [ -f "./data/png/lava-drip-SB.png" ]; then echo "Found png/lava-drip-SB.png!"; else echo "error: Missing file: png/lava-drip-SB.png"; exit 1; fi
+          if [ -f "./data/png/mountains-SB1.png" ]; then echo "Found png/mountains-SB1.png!"; else echo "error: Missing file: png/mountains-SB1.png"; exit 1; fi
+          if [ -f "./data/png/mountains-SB2.png" ]; then echo "Found png/mountains-SB2.png!"; else echo "error: Missing file: png/mountains-SB2.png"; exit 1; fi
+          if [ -f "./data/png/mountains-SB3.png" ]; then echo "Found png/mountains-SB3.png!"; else echo "error: Missing file: png/mountains-SB3.png"; exit 1; fi
 
       # Check full version's background environment files
       - name: Check background environments (map-back)
         run: |
-          if [ -f "./data/map-back/sky-SB.map" ]; then echo "Found sky world file! (map-back)"; else echo "Missing file: map-back/sky-SB.map"; exit 1; fi
-          if [ -f "./data/map-back/ice-SB.map" ]; then echo "Found ice world file! (map-back)"; else echo "Missing file: map-back/ice-SB.map"; exit 1; fi
-          if [ -f "./data/map-back/cave-SB.map" ]; then echo "Found cave world file! (map-back)"; else echo "Missing file: map-back/cave-SB.map"; exit 1; fi
-          if [ -f "./data/map-back/clouds-SB.map" ]; then echo "Found cloud world file! (map-back)"; else echo "Missing file: map-back/clouds-SB.map"; exit 1; fi
-          if [ -f "./data/map-back/lava-SB.map" ]; then echo "Found lava world file! (map-back)"; else echo "Missing file: map-back/lava-SB.map"; exit 1; fi
+          if [ -f "./data/map-back/sky-SB.map" ]; then echo "Found sky world file! (map-back)"; else echo "error: Missing file: map-back/sky-SB.map"; exit 1; fi
+          if [ -f "./data/map-back/ice-SB.map" ]; then echo "Found ice world file! (map-back)"; else echo "error: Missing file: map-back/ice-SB.map"; exit 1; fi
+          if [ -f "./data/map-back/cave-SB.map" ]; then echo "Found cave world file! (map-back)"; else echo "error: Missing file: map-back/cave-SB.map"; exit 1; fi
+          if [ -f "./data/map-back/clouds-SB.map" ]; then echo "Found cloud world file! (map-back)"; else echo "error: Missing file: map-back/clouds-SB.map"; exit 1; fi
+          if [ -f "./data/map-back/lava-SB.map" ]; then echo "Found lava world file! (map-back)"; else echo "error: Missing file: map-back/lava-SB.map"; exit 1; fi
 
       # Check full version's music files
       - name: Check music backgrounds (bgm)
         run: |
-          if [ -f "./data/bgm/title-switchball.ogg" ]; then echo "Main menu music file found!"; else echo "Missing main menu music file: bgm/track-SB1.ogg"; exit 1; fi
-          if [ -f "./data/bgm/track-SB1.ogg" ]; then echo "Sky world music file found!"; else echo "Missing sky world music file: bgm/track-SB1.ogg"; exit 1; fi
-          if [ -f "./data/bgm/track-SB2.ogg" ]; then echo "Ice world music file found!"; else echo "Missing ice world music file: bgm/track-SB2.ogg"; exit 1; fi
-          if [ -f "./data/bgm/track-SB3.ogg" ]; then echo "Cave world music file found!"; else echo "Missing cave world music file: bgm/track-SB3.ogg"; exit 1; fi
-          if [ -f "./data/bgm/track-SB4.ogg" ]; then echo "Cloud world music file found!"; else echo "Missing cloud world music file: bgm/track-SB4.ogg"; exit 1; fi
-          if [ -f "./data/bgm/track-SB5.ogg" ]; then echo "Lava world music file found!"; else echo "Missing lava world music file: bgm/track-SB5.ogg"; exit 1; fi
+          if [ -f "./data/bgm/title-switchball.ogg" ]; then echo "Main menu music file found!"; else echo "error: Missing main menu music file: bgm/track-SB1.ogg"; exit 1; fi
+          if [ -f "./data/bgm/track-SB1.ogg" ]; then echo "Sky world music file found!"; else echo "error: Missing sky world music file: bgm/track-SB1.ogg"; exit 1; fi
+          if [ -f "./data/bgm/track-SB2.ogg" ]; then echo "Ice world music file found!"; else echo "error: Missing ice world music file: bgm/track-SB2.ogg"; exit 1; fi
+          if [ -f "./data/bgm/track-SB3.ogg" ]; then echo "Cave world music file found!"; else echo "error: Missing cave world music file: bgm/track-SB3.ogg"; exit 1; fi
+          if [ -f "./data/bgm/track-SB4.ogg" ]; then echo "Cloud world music file found!"; else echo "error: Missing cloud world music file: bgm/track-SB4.ogg"; exit 1; fi
+          if [ -f "./data/bgm/track-SB5.ogg" ]; then echo "Lava world music file found!"; else echo "error: Missing lava world music file: bgm/track-SB5.ogg"; exit 1; fi
 
       # Check full version's game sound
       - name: Check game sounds (snd)
         run: |
-          if [ -f "./data/snd/back.ogg" ]; then echo "UI back btn sound file found!"; else echo "Missing game sound file: snd/back.ogg"; exit 1; fi
-          if [ -f "./data/snd/checkpoint.ogg" ]; then echo "Activate checkpoint sound file found!"; else echo "Missing game sound file: snd/checkpoint.ogg"; exit 1; fi
-          if [ -f "./data/snd/focus.ogg" ]; then echo "UI focus btn sound file found!"; else echo "Missing game sound file: snd/focus.ogg"; exit 1; fi
-          if [ -f "./data/snd/goal_campaign.ogg" ]; then echo "Boarding gyrocopter sound file found!"; else echo "Missing game sound file: snd/goal_campaign.ogg"; exit 1; fi
-          if [ -f "./data/snd/grow.ogg" ]; then echo "Transform size sound file found (grow)!"; else echo "Missing game sound file: snd/grow.ogg"; exit 1; fi
-          if [ -f "./data/snd/menu.ogg" ]; then echo "UI activate btn sound file found!"; else echo "Missing game sound file: snd/menu.ogg"; exit 1; fi
-          if [ -f "./data/snd/new_time_record.ogg" ]; then echo "Time record sound file found!"; else echo "Missing game sound file: snd/new_time_record.ogg"; exit 1; fi
-          if [ -f "./data/snd/respawn.ogg" ]; then echo "Respawn sound file found!"; else echo "Missing game sound file: snd/respawn.ogg"; exit 1; fi
-          if [ -f "./data/snd/shoot_xl.ogg" ]; then echo "Cannon shoot sound file file found!"; else echo "Missing game sound file: snd/shoot_xl.ogg"; exit 1; fi
-          if [ -f "./data/snd/shrink.ogg" ]; then echo "Transform size sound file found (shrink)!"; else echo "Missing game sound file: snd/shrink.ogg"; exit 1; fi
+          if [ -f "./data/snd/back.ogg" ]; then echo "UI back btn sound file found!"; else echo "error: Missing game sound file: snd/back.ogg"; exit 1; fi
+          if [ -f "./data/snd/checkpoint.ogg" ]; then echo "Activate checkpoint sound file found!"; else echo "error: Missing game sound file: snd/checkpoint.ogg"; exit 1; fi
+          if [ -f "./data/snd/focus.ogg" ]; then echo "UI focus btn sound file found!"; else echo "error: Missing game sound file: snd/focus.ogg"; exit 1; fi
+          if [ -f "./data/snd/goal_campaign.ogg" ]; then echo "Boarding gyrocopter sound file found!"; else echo "error: Missing game sound file: snd/goal_campaign.ogg"; exit 1; fi
+          if [ -f "./data/snd/grow.ogg" ]; then echo "Transform size sound file found (grow)!"; else echo "error: Missing game sound file: snd/grow.ogg"; exit 1; fi
+          if [ -f "./data/snd/menu.ogg" ]; then echo "UI activate btn sound file found!"; else echo "error: Missing game sound file: snd/menu.ogg"; exit 1; fi
+          if [ -f "./data/snd/new_time_record.ogg" ]; then echo "Time record sound file found!"; else echo "error: Missing game sound file: snd/new_time_record.ogg"; exit 1; fi
+          if [ -f "./data/snd/respawn.ogg" ]; then echo "Respawn sound file found!"; else echo "error: Missing game sound file: snd/respawn.ogg"; exit 1; fi
+          if [ -f "./data/snd/shoot_xl.ogg" ]; then echo "Cannon shoot sound file file found!"; else echo "error: Missing game sound file: snd/shoot_xl.ogg"; exit 1; fi
+          if [ -f "./data/snd/shrink.ogg" ]; then echo "Transform size sound file found (shrink)!"; else echo "error: Missing game sound file: snd/shrink.ogg"; exit 1; fi
 
       # Check full version's UI files
       - name: Check UI files (gui)
         run: |
-          if [ -f "./data/gui/cursor.png" ]; then echo "Cursor image file found!"; else echo "Missing cursor image file: gui/cursor.png"; exit 1; fi
-          if [ -f "./data/gui/switchball/back-hilite.png" ]; then echo "UIBG hilite file found!"; else echo "Missing UIBG hilite file: gui/switchball/back-hilite.png"; exit 1; fi
-          if [ -f "./data/gui/switchball/back-hilite-focus.png" ]; then echo "UIBG hilite file found (focus)!"; else echo "Missing UIBG hilite file (focus): gui/switchball/back-hilite-focus.png"; exit 1; fi
-          if [ -f "./data/gui/switchball/back-plain.png" ]; then echo "UIBG file found!"; else echo "Missing UIBG file: gui/switchball/back-plain.png"; exit 1; fi
-          if [ -f "./data/gui/switchball/back-plain-focus.png" ]; then echo "UIBG file found (focus)!"; else echo "Missing UIBG file (focus): gui/switchball/back-plain-focus.png"; exit 1; fi
-          if [ -f "./data/gui/switchball/theme.txt" ]; then echo "Theme file found!"; else echo "Missing theme file: gui/switchball/theme.txt"; exit 1; fi
+          if [ -f "./data/gui/cursor.png" ]; then echo "Cursor image file found!"; else echo "error: Missing cursor image file: gui/cursor.png"; exit 1; fi
+          if [ -f "./data/gui/switchball/back-hilite.png" ]; then echo "UIBG hilite file found!"; else echo "error: Missing UIBG hilite file: gui/switchball/back-hilite.png"; exit 1; fi
+          if [ -f "./data/gui/switchball/back-hilite-focus.png" ]; then echo "UIBG hilite file found (focus)!"; else echo "error: Missing UIBG hilite file (focus): gui/switchball/back-hilite-focus.png"; exit 1; fi
+          if [ -f "./data/gui/switchball/back-plain.png" ]; then echo "UIBG file found!"; else echo "error: Missing UIBG file: gui/switchball/back-plain.png"; exit 1; fi
+          if [ -f "./data/gui/switchball/back-plain-focus.png" ]; then echo "UIBG file found (focus)!"; else echo "error: Missing UIBG file (focus): gui/switchball/back-plain-focus.png"; exit 1; fi
+          if [ -f "./data/gui/switchball/theme.txt" ]; then echo "Theme file found!"; else echo "error: Missing theme file: gui/switchball/theme.txt"; exit 1; fi
 
       # Check full version's main menu map file
       - name: Check main menu map file (gui)
         run: |
-          if [ -f "./data/gui/switchball-title.map" ]; then echo "Title level map file found!"; else echo "Missing title level map file: gui/gui/switchball-title.map"; exit 1; fi
+          if [ -f "./data/gui/switchball-title.map" ]; then echo "Title level map file found!"; else echo "error: Missing title level map file: gui/gui/switchball-title.map"; exit 1; fi
 
       # Check full version's model file
       - name: Check model file (obj)
         run: |
-          if [ -f "./data/obj/special-placeholder.obj" ]; then echo "Found OBJ model!: special-placeholder.obj"; else echo "Missing model file: data/obj/special-placeholder.obj"; exit 1; fi
+          if [ -f "./data/obj/special-placeholder.obj" ]; then echo "Found OBJ model!: special-placeholder.obj"; else echo "error: Missing model file: data/obj/special-placeholder.obj"; exit 1; fi
 
       # Check full version's essential template files
       - name: Check essential template files (template-switchball)
@@ -157,22 +164,22 @@ jobs:
             if grep -RIn "info_player_start" data/template-switchball/template-vehicle-start.map; then
               echo "Found info_player_start in data/template-switchball/template-vehicle-start.map!";
             else
-              echo "info_player_start not found in data/template-switchball/template-vehicle-start.map!";
+              echo "error: info_player_start not found in data/template-switchball/template-vehicle-start.map!";
               exit 1;
             fi
           else
-            echo "data/template-switchball/template-vehicle-start.map is missing!";
+            echo "error: data/template-switchball/template-vehicle-start.map is missing!";
             exit 1;
           fi
           if [ -f "./data/template-switchball/template-vehicle-end.map" ]; then
             if grep -RIn "info_player_deathmatch" data/template-switchball/template-vehicle-end.map; then
               echo "Found info_player_deathmatch in data/template-switchball/template-vehicle-end.map!";
             else
-              echo "info_player_start not found in data/template-switchball/template-vehicle-end.map!";
+              echo "error: info_player_start not found in data/template-switchball/template-vehicle-end.map!";
               exit 1;
             fi
           else
-            echo "data/template-switchball/template-vehicle-end.map is missing!";
+            echo "error: data/template-switchball/template-vehicle-end.map is missing!";
             exit 1;
           fi
 
@@ -183,100 +190,93 @@ jobs:
             if grep -RIn "func_train" data/template-switchball/template-magnet-transport.map; then
               echo "Found func_train in data/template-switchball/template-magnet-transport.map!";
             else
-              echo "func_train not found in data/template-switchball/template-magnet-transport.map!";
+              echo "error: func_train not found in data/template-switchball/template-magnet-transport.map!";
               exit 1;
             fi
             if grep -RIn "path_corner" data/template-switchball/template-magnet-transport.map; then
               echo "Found path_corner in data/template-switchball/template-magnet-transport.map!";
             else
-              echo "path_corner not found in data/template-switchball/template-magnet-transport.map!";
+              echo "error: path_corner not found in data/template-switchball/template-magnet-transport.map!";
               exit 1;
             fi
           else
-            echo "data/template-switchball/template-magnet-transport.map is missing!";
+            echo "error: data/template-switchball/template-magnet-transport.map is missing!";
             exit 1;
           fi
           if [ -f "./data/template-switchball/template-magnet-transport-lshape.map" ]; then
             if grep -RIn "func_train" data/template-switchball/template-magnet-transport-lshape.map; then
               echo "Found func_train in data/template-switchball/template-magnet-transport-lshape.map!";
             else
-              echo "func_train not found in data/template-switchball/template-magnet-transport-lshape.map!";
+              echo "error: func_train not found in data/template-switchball/template-magnet-transport-lshape.map!";
               exit 1;
             fi
             if grep -RIn "path_corner" data/template-switchball/template-magnet-transport-lshape.map; then
               echo "Found path_corner in data/template-switchball/template-magnet-transport-lshape.map!";
             else
-              echo "path_corner not found in data/template-switchball/template-magnet-transport-lshape.map!";
+              echo "error: path_corner not found in data/template-switchball/template-magnet-transport-lshape.map!";
               exit 1;
             fi
           else
-            echo "data/template-switchball/template-magnet-transport-lshape.map is missing!";
+            echo "error: data/template-switchball/template-magnet-transport-lshape.map is missing!";
             exit 1;
           fi
           if [ -f "./data/template-switchball/template-magnet-transport-lshape_doubledeck.map" ]; then
             if grep -RIn "func_train" data/template-switchball/template-magnet-transport-lshape_doubledeck.map; then
               echo "Found func_train in data/template-switchball/template-magnet-transport-lshape_doubledeck.map!";
             else
-              echo "func_train not found in data/template-switchball/template-magnet-transport-lshape_doubledeck.map!";
+              echo "error: func_train not found in data/template-switchball/template-magnet-transport-lshape_doubledeck.map!";
               exit 1;
             fi
             if grep -RIn "path_corner" data/template-switchball/template-magnet-transport-lshape_doubledeck.map; then
               echo "Found path_corner in data/template-switchball/template-magnet-transport-lshape_doubledeck.map!";
             else
-              echo "path_corner not found in data/template-switchball/template-magnet-transport-lshape_doubledeck.map!";
+              echo "error: path_corner not found in data/template-switchball/template-magnet-transport-lshape_doubledeck.map!";
               exit 1;
             fi
           else
-            echo "data/template-switchball/template-magnet-transport-lshape_doubledeck.map is missing!";
+            echo "error: data/template-switchball/template-magnet-transport-lshape_doubledeck.map is missing!";
             exit 1;
           fi
           if [ -f "./data/template-switchball/template-lock.map" ]; then
             if grep -RIn "path_corner" data/template-switchball/template-lock.map; then
               echo "Found path_corner in data/template-switchball/template-lock.map!";
             else
-              echo "path_corner not found in data/template-switchball/template-lock.map!";
+              echo "error: path_corner not found in data/template-switchball/template-lock.map!";
               exit 1;
             fi
           else
-            echo "data/template-switchball/template-lock.map is missing!";
+            echo "error: data/template-switchball/template-lock.map is missing!";
             exit 1;
           fi
           if [ -f "./data/template-switchball/template-fence-lock.map" ]; then
             if grep -RIn "path_corner" data/template-switchball/template-fence-lock.map; then
               echo "Found path_corner in data/template-switchball/template-fence-lock.map!";
             else
-              echo "path_corner not found in data/template-switchball/template-fence-lock.map!";
+              echo "error: path_corner not found in data/template-switchball/template-fence-lock.map!";
               exit 1;
             fi
           else
-            echo "data/template-switchball/template-fence-lock.map is missing!";
+            echo "error: data/template-switchball/template-fence-lock.map is missing!";
             exit 1;
           fi
           if [ -f "./data/template-switchball/template-fence-lock-timed.map" ]; then
             if grep -RIn "path_corner" data/template-switchball/template-fence-lock-timed.map; then
               echo "Found path_corner in data/template-switchball/template-fence-lock-timed.map!";
             else
-              echo "path_corner not found in data/template-switchball/template-fence-lock-timed.map!";
+              echo "error: path_corner not found in data/template-switchball/template-fence-lock-timed.map!";
               exit 1;
             fi
           else
-            echo "data/template-switchball/template-fence-lock-timed.map is missing!";
+            echo "error: data/template-switchball/template-fence-lock-timed.map is missing!";
             exit 1;
           fi
 
-      # Check unlimited time per level maps
-      - name: Check unlimited time per level maps (map-sb*)
+      # Check script files. If so, enable execute permission.
+      - name: Check script files
         run: |
-          dir_pattern=(./data/map-sb*/)
-          shopt -s nullglob
-          dirs=($dir_pattern)
-          if (( ${#dirs[@]} > 0 )); then
-            if [ -d "${dirs[@]}" ]; then
-              if grep -v -RIn "\"time\" \"0\"" ${dirs[@]} | grep "\"time\""; then
-                echo "Level time limit detected in ${dirs[@]}!"
-                exit 1;
-              fi
-            fi
-          else
-            echo "There's no level maps associated in map-sb*! (skipped)"
-          fi
+          if [ -f "./scripts/check_levelmaps.sh" ]; then chmod +x ./scripts/check_levelmaps.sh; else echo "error: Missing script file: scripts/check_levelmaps.sh"; exit 1; fi
+
+      # Check level maps in pre-classic campaign
+      - name: Check level maps (map-sb*) (pre-classic campaign)
+        run: |
+          ./scripts/check_levelmaps.sh
