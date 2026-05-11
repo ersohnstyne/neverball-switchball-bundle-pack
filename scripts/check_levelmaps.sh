@@ -10,16 +10,21 @@ if (( ${#dirs[@]} > 0 )); then
     in_file_back="";
     in_file_grad="";
 
-    if [[ $in_file_plain != *"\"classname\""* ]]; then
-      echo "${in_file}: error: Missing classname!"
-      exit 1;
-    elif [[ $in_file_plain != *"\"classname\" \"worldspawn\""* ]]; then
-      echo "${in_file}: error: Invalid level map type!"
+    #if [[ $in_file_plain != *"\"classname\""* ]]; then
+    #  echo "${in_file}: error: Missing classname!"
+    #  exit 1;
+    #elif [[ $in_file_plain != *"\"classname\" \"worldspawn\""* ]]; then
+    #  echo "${in_file}: error: Invalid level map type! Must be assigned as worldspawn!"
+    #  exit 1;
+    #fi
+    
+    if [[ $in_file_plain == *"\"bonus\""* && $in_file_plain != *"\"bonus\" \"0\""* ]]; then
+      echo "${in_file}: error: Bonus level detected! Switchball does not offer bonus levels!"
       exit 1;
     fi
 
     if [[ $in_file_plain == *"\"time\""* && $in_file_plain != *"\"time\" \"0\""* ]]; then
-      echo "${in_file}: error: Time limit detected!"
+      echo "${in_file}: error: Time limit detected! Switchball does not offer limited time!"
       exit 1;
     fi
 
@@ -151,6 +156,109 @@ if (( ${#dirs[@]} > 0 )); then
         exit 1;
       fi
     fi
+
+    #if [[ ! -r ${in_file} ]]; then
+    #  echo "${in_file}: error: File not found or not readable!"
+    #  exit 1;
+    #fi
+
+    while IFS= read -r in_file_line || [[ -n $in_file_line ]]; do
+      if [[ $in_file_line == *"\"version\""* ]]; then
+        echo "${in_file}: info: Checking version format..."
+        if [[ $in_file_line =~ \"([0-9]+)\.([0-9]+)\" ]]; then
+          echo "${in_file}: info: Checking version values..."
+          version_major=${BASH_REMATCH[1]}
+          version_minor=${BASH_REMATCH[2]}
+          if [[ version_major -gt 20000 ]]; then
+            echo "${in_file}: error: Too futuristic!: version_major <= 20000"
+            exit 1;
+          fi
+          if [[ version_minor -gt 200000000 ]]; then
+            echo "${in_file}: error: Too futuristic!: version_minor <= 200000000"
+            exit 1;
+          fi
+        else
+          echo "${in_file}: error: Invalid version format!"
+          exit 1;
+        fi
+      fi
+
+      if [[ $in_file_line == *"\"coin_hs\""* ]]; then
+        echo "${in_file}: info: Checking Most Coins HS format..."
+        if [[ $in_file_line =~ \"([0-9]+)\ ([0-9]+)\ ([0-9]+)\" ]]; then
+          echo "${in_file}: info: Checking Most Coins HS values..."
+          coin_hs_hard=${BASH_REMATCH[1]}
+          coin_hs_medm=${BASH_REMATCH[2]}
+          coin_hs_easy=${BASH_REMATCH[3]}
+          if [[ $coin_hs_hard -lt $coin_hs_medm ]]; then
+            echo "${in_file}: error: coin_hs_medm is greater than coin_hs_hard!"
+            exit 1;
+          fi
+          if [[ $coin_hs_hard -lt $coin_hs_easy ]]; then
+            echo "${in_file}: error: coin_hs_easy is greater than coin_hs_hard!"
+            exit 1;
+          fi
+          if [[ $coin_hs_medm -lt $coin_hs_easy ]]; then
+            echo "${in_file}: error: coin_hs_easy is greater than coin_hs_medm!"
+            exit 1;
+          fi
+        else
+          echo "${in_file}: error: Invalid Best Time HS format!"
+          exit 1;
+        fi
+      fi
+
+      if [[ $in_file_line == *"\"time_hs\""* ]]; then
+        echo "${in_file}: info: Checking Best Time HS format..."
+        if [[ $in_file_line =~ \"([0-9]+)\ ([0-9]+)\ ([0-9]+)\" ]]; then
+          echo "${in_file}: info: Checking Best Time HS values..."
+          time_hs_hard=${BASH_REMATCH[1]}
+          time_hs_medm=${BASH_REMATCH[2]}
+          time_hs_easy=${BASH_REMATCH[3]}
+          if [[ $time_hs_hard -gt $time_hs_medm ]]; then
+            echo "${in_file}: error: time_hs_hard is greater than time_hs_medm!"
+            exit 1;
+          fi
+          if [[ $time_hs_hard -gt $time_hs_easy ]]; then
+            echo "${in_file}: error: time_hs_hard is greater than time_hs_easy!"
+            exit 1;
+          fi
+          if [[ $time_hs_medm -gt $time_hs_easy ]]; then
+            echo "${in_file}: error: time_hs_medm is greater than time_hs_easy!"
+            exit 1;
+          fi
+        else
+          echo "${in_file}: error: Invalid Best Time HS format!"
+          exit 1;
+        fi
+      fi
+
+      if [[ $in_file_line == *"\"goal_hs\""* ]]; then
+        echo "${in_file}: info: Checking Fast Unlock HS format..."
+        if [[ $in_file_line =~ \"([0-9]+)\ ([0-9]+)\ ([0-9]+)\" ]]; then
+          echo "${in_file}: info: Checking Fast Unlock HS values..."
+          goal_hs_hard=${BASH_REMATCH[1]}
+          goal_hs_medm=${BASH_REMATCH[2]}
+          goal_hs_easy=${BASH_REMATCH[3]}
+          if [[ $goal_hs_hard -gt $goal_hs_medm ]]; then
+            echo "${in_file}: error: goal_hs_hard is greater than goal_hs_medm!"
+            exit 1;
+          fi
+          if [[ $goal_hs_hard -gt $goal_hs_easy ]]; then
+            echo "${in_file}: error: goal_hs_hard is greater than goal_hs_easy!"
+            exit 1;
+          fi
+          if [[ $goal_hs_medm -gt $goal_hs_easy ]]; then
+            echo "${in_file}: error: goal_hs_medm is greater than goal_hs_easy!"
+            exit 1;
+          fi
+        else
+          echo "${in_file}: error: Invalid Fast Unlock HS format!"
+          exit 1;
+        fi
+      fi
+    done < ${in_file}
+
     echo "${in_file}: Done!"
   else
     echo "There's no level maps associated in map-sb*! (skipped)"
