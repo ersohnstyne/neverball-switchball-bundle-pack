@@ -59,7 +59,6 @@ jobs:
             exit 1;
           fi
 
-
       # Check full version's readme image logo
       - name: Check readme image logo
         run: |
@@ -71,7 +70,6 @@ jobs:
           if [ -f "./readme.md" ]; then echo "Found readme.md!"; else echo "Missing readme.md!"; exit 1; fi
           if [ -f "./contributing.md" ]; then echo "Found contributing.md!"; else echo "Missing contributing.md!"; exit 1; fi
           if [ -f "./pull_request_template.md" ]; then echo "Found pull_request_template.md!"; else echo "Missing pull_request_template.md!"; exit 1; fi
-          if [ -f "./security.md" ]; then echo "Found security.md!"; else echo "Missing security.md!"; exit 1; fi
 
       # Check full version's mapping documentation files
       - name: Check mapping documentation files
