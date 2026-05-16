@@ -285,4 +285,5 @@ jobs:
     if: ${{ needs.checkcontent.result == 'success' }} # String comparison
     steps:
       - name: Print status
-        run: "Done! - Hit the merge button!"
+        run: |
+          echo "Done! - Hit the merge button!"
