@@ -1,4 +1,4 @@
-# Import Notifications
+# Import Validations
 
 Before you can upload to the directory (such as "map-switchball" or "map-sb"), ensure that the templates are correctly installed.
 
