@@ -4,11 +4,11 @@ name: Check Full Version Content
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize, ready_for_review]
+    types: [opened, reopened, ready_for_review]
     branches:
       - master
   pull_request_target:
-    types: [opened, reopened, synchronize, ready_for_review]
+    types: [opened, reopened, ready_for_review]
     branches:
       - master
   workflow_dispatch:
