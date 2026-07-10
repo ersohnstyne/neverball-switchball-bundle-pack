@@ -7,10 +7,10 @@ on:
     types: [opened, reopened, ready_for_review]
     branches:
       - master
-  pull_request_target:
-    types: [opened, reopened, ready_for_review]
-    branches:
-      - master
+#  pull_request_target:
+#    types: [opened, reopened, ready_for_review]
+#    branches:
+#      - master
   workflow_dispatch:
 
 permissions:
@@ -20,11 +20,11 @@ jobs:
   checkcontent:
     runs-on: ubuntu-latest
     concurrency:
-      group: "contentupdate-${{ github.ref }}"
+      group: "contentupdate-${{ github.sha }}"
       cancel-in-progress: true
     steps:
-      - name: Start checkout repository file
-        uses: actions/checkout@v6.0.3
+      - name: "Start checkout repository file (${{ github.repository_owner }})"
+        uses: actions/checkout@v7
 
       # Check head source zone
       - name: Check head source zone
