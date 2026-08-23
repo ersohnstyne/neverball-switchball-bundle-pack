@@ -62,6 +62,19 @@ if (( ${#dirs[@]} > 0 )); then
       echo "${in_file}: error: Missing background environment!"
       echo "::error file=${in_file},title=Missing background environment!::This level requires background environment! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
       exit 1;
+    elif [[ $in_file_plain == *"\"back\" \"map-back/sky-SB_night.sol\""* ||
+            $in_file_plain == *"\"back\" \"map-back/ice-SB_night.sol\""* ||
+            $in_file_plain == *"\"back\" \"map-back/cave-SB_night.sol\""* ||
+            $in_file_plain == *"\"back\" \"map-back/clouds-SB_night.sol\""* ||
+            $in_file_plain == *"\"back\" \"map-back/lava-SB_night.sol\""* ||
+            $in_file_plain == *"\"back\" \"map-back/sky-SB_night.solx\""* ||
+            $in_file_plain == *"\"back\" \"map-back/ice-SB_night.solx\""* ||
+            $in_file_plain == *"\"back\" \"map-back/cave-SB_night.solx\""* ||
+            $in_file_plain == *"\"back\" \"map-back/clouds-SB_night.solx\""* ||
+            $in_file_plain == *"\"back\" \"map-back/lava-SB_night.solx\""* ]]; then
+      echo "${in_file}: error: Pro expansion only!"
+      echo "::error file=${in_file},title=Pro expansion only!::This background environment file can be used with Pro expansion for Switchball world backgrounds! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
+      exit 1;
     elif [[ $in_file_plain != *"\"back\" \"map-back/sky-SB.sol\""* &&
             $in_file_plain != *"\"back\" \"map-back/ice-SB.sol\""* &&
             $in_file_plain != *"\"back\" \"map-back/cave-SB.sol\""* &&
@@ -71,7 +84,17 @@ if (( ${#dirs[@]} > 0 )); then
             $in_file_plain != *"\"back\" \"map-back/ice-SB.solx\""* &&
             $in_file_plain != *"\"back\" \"map-back/cave-SB.solx\""* &&
             $in_file_plain != *"\"back\" \"map-back/clouds-SB.solx\""* &&
-            $in_file_plain != *"\"back\" \"map-back/lava-SB.solx\""* ]]; then
+            $in_file_plain != *"\"back\" \"map-back/lava-SB.solx\""* &&
+            $in_file_plain != *"\"back\" \"map-back/sky-SB_night.sol\""* &&
+            $in_file_plain != *"\"back\" \"map-back/ice-SB_night.sol\""* &&
+            $in_file_plain != *"\"back\" \"map-back/cave-SB_night.sol\""* &&
+            $in_file_plain != *"\"back\" \"map-back/clouds-SB_night.sol\""* &&
+            $in_file_plain != *"\"back\" \"map-back/lava-SB_night.sol\""* &&
+            $in_file_plain != *"\"back\" \"map-back/sky-SB_night.solx\""* &&
+            $in_file_plain != *"\"back\" \"map-back/ice-SB_night.solx\""* &&
+            $in_file_plain != *"\"back\" \"map-back/cave-SB_night.solx\""* &&
+            $in_file_plain != *"\"back\" \"map-back/clouds-SB_night.solx\""* &&
+            $in_file_plain != *"\"back\" \"map-back/lava-SB_night.solx\""* ]]; then
       echo "${in_file}: error: Mismatch background environment!"
       echo "::error file=${in_file},title=Mismatch background environment!::This background environment file does not contain Switchball world backgrounds! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
       exit 1;
@@ -83,11 +106,24 @@ if (( ${#dirs[@]} > 0 )); then
       echo "${in_file}: error: Missing background gradient!"
       echo "::error file=${in_file},title=Missing background gradient!::This level requires background gradient! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
       exit 1;
+    elif [[ $in_file_plain == *"\"grad\" \"back/sky-SB_night.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/ice-SB_night.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/cave-SB_night.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/clouds-SB_night.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/lava-SB_night.png\""* ]]; then
+      echo "${in_file}: error: Pro expansion only!"
+      echo "::error file=${in_file},title=Pro expansion only!::This background gradient file can be used with Pro expansion for Switchball world backgrounds! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
+      exit 1;
     elif [[ $in_file_plain != *"\"grad\" \"back/sky-SB.png\""* &&
             $in_file_plain != *"\"grad\" \"back/ice-SB.png\""* &&
             $in_file_plain != *"\"grad\" \"back/cave-SB.png\""* &&
             $in_file_plain != *"\"grad\" \"back/clouds-SB.png\""* &&
-            $in_file_plain != *"\"grad\" \"back/lava-SB.png\""* ]]; then
+            $in_file_plain != *"\"grad\" \"back/lava-SB.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/sky-SB_night.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/ice-SB_night.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/cave-SB_night.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/clouds-SB_night.png\""* &&
+            $in_file_plain == *"\"grad\" \"back/lava-SB_night.png\""* ]]; then
       echo "${in_file}: error: Mismatch background gradient!"
       echo "::error file=${in_file},title=Mismatch background gradient!::This background gradient file does not contain Switchball world backgrounds! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
       exit 1;
@@ -98,12 +134,15 @@ if (( ${#dirs[@]} > 0 )); then
     # SKY WORLD
     if [[ $in_file_song == *"bgm/track-SB1.ogg"* ]]; then
       if [[ $in_file_back != *"map-back/sky-SB.sol"* &&
-            $in_file_back != *"map-back/sky-SB.solx"* ]]; then
+            $in_file_back != *"map-back/sky-SB.solx"* &&
+            $in_file_back != *"map-back/sky-SB_night.sol"* &&
+            $in_file_back != *"map-back/sky-SB_night.solx"* ]]; then
         echo "${in_file}: error: Mismatch background environment from sky world music!"
         echo "::error file=${in_file},title=Mismatch background environment!::Mismatch background environment from sky world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
       fi
-      if [[ $in_file_grad != *"back/sky-SB.png"* ]]; then
+      if [[ $in_file_grad != *"back/sky-SB.png"* &&
+            $in_file_grad != *"back/sky-SB_night.png"*]]; then
         echo "${in_file}: error: Mismatch background gradient from sky world music!"
         echo "::error file=${in_file},title=Mismatch background gradient!::Mismatch background gradient from sky world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
@@ -113,12 +152,15 @@ if (( ${#dirs[@]} > 0 )); then
     # ICE WORLD
     if [[ $in_file_song == *"bgm/track-SB2.ogg"* ]]; then
       if [[ $in_file_back != *"map-back/ice-SB.sol"* &&
-            $in_file_back != *"map-back/ice-SB.solx"* ]]; then
+            $in_file_back != *"map-back/ice-SB.solx"* &&
+            $in_file_back != *"map-back/ice-SB_night.sol"* &&
+            $in_file_back != *"map-back/ice-SB_night.solx"* ]]; then
         echo "${in_file}: error: Mismatch background environment from ice world music!"
         echo "::error file=${in_file},title=Mismatch background environment!::Mismatch background environment from ice world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
       fi
-      if [[ $in_file_grad != *"back/ice-SB.png"* ]]; then
+      if [[ $in_file_grad != *"back/ice-SB.png"* &&
+            $in_file_grad != *"back/ice-SB_night.png"* ]]; then
         echo "${in_file}: error: Mismatch background gradient from ice world music!"
         echo "::error file=${in_file},title=Mismatch background gradient!::Mismatch background gradient from ice world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
@@ -128,12 +170,15 @@ if (( ${#dirs[@]} > 0 )); then
     # CAVE WORLD
     if [[ $in_file_song == *"bgm/track-SB3.ogg"* ]]; then
       if [[ $in_file_back != *"map-back/cave-SB.sol"* &&
-            $in_file_back != *"map-back/cave-SB.solx"* ]]; then
+            $in_file_back != *"map-back/cave-SB.solx"* &&
+            $in_file_back != *"map-back/cave-SB_night.sol"* &&
+            $in_file_back != *"map-back/cave-SB_night.solx"* ]]; then
         echo "${in_file}: error: Mismatch background environment from cave world music!"
         echo "::error file=${in_file},title=Mismatch background environment!::Mismatch background environment from cave world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
       fi
-      if [[ $in_file_grad != *"back/cave-SB.png"* ]]; then
+      if [[ $in_file_grad != *"back/cave-SB.png"* &&
+            $in_file_grad != *"back/cave-SB_night.png"* ]]; then
         echo "${in_file}: error: Mismatch background gradient from cave world music!"
         echo "::error file=${in_file},title=Mismatch background gradient!::Mismatch background gradient from cave world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
@@ -143,12 +188,15 @@ if (( ${#dirs[@]} > 0 )); then
     # CLOUD WORLD
     if [[ $in_file_song == *"bgm/track-SB4.ogg"* ]]; then
       if [[ $in_file_back != *"map-back/clouds-SB.sol"* &&
-            $in_file_back != *"map-back/clouds-SB.solx"* ]]; then
+            $in_file_back != *"map-back/clouds-SB.solx"* &&
+            $in_file_back != *"map-back/clouds-SB_night.sol"* &&
+            $in_file_back != *"map-back/clouds-SB_night.solx"* ]]; then
         echo "${in_file}: error: Mismatch background environment from cloud world music!"
         echo "::error file=${in_file},title=Mismatch background environment!::Mismatch background environment from cloud world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
       fi
-      if [[ $in_file_grad != *"back/clouds-SB.png"* ]]; then
+      if [[ $in_file_grad != *"back/clouds-SB.png"* &&
+            $in_file_grad != *"back/clouds-SB_night.png"* ]]; then
         echo "${in_file}: error: Mismatch background gradient from cloud world music!"
         echo "::error file=${in_file},title=Mismatch background gradient!::Mismatch background gradient from cloud world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
@@ -158,12 +206,15 @@ if (( ${#dirs[@]} > 0 )); then
     # LAVA WORLD
     if [[ $in_file_song == *"bgm/track-SB5.ogg"* ]]; then
       if [[ $in_file_back != *"map-back/lava-SB.sol"* &&
-            $in_file_back != *"map-back/lava-SB.solx"* ]]; then
+            $in_file_back != *"map-back/lava-SB.solx"* &&
+            $in_file_back != *"map-back/lava-SB_night.sol"* &&
+            $in_file_back != *"map-back/lava-SB_night.solx"* ]]; then
         echo "${in_file}: error: Mismatch background environment from lava world music!"
         echo "::error file=${in_file},title=Mismatch background environment!::Mismatch background environment from lava world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
       fi
-      if [[ $in_file_grad != *"back/lava-SB.png"* ]]; then
+      if [[ $in_file_grad != *"back/lava-SB.png"* &&
+            $in_file_grad != *"back/lava-SB_night.png"* ]]; then
         echo "${in_file}: error: Mismatch background gradient from lava world music!"
         echo "::error file=${in_file},title=Mismatch background gradient!::Mismatch background environment from lava world music! For more information how to follow the Switchball level creation for Neverball and Pennyball + Neverball WGCL, see: https://pennyball.stynegame.de/news and https://github.com/ersohnstyne/neverball-switchball-bundle-pack/blob/master/docs/Level%20Map.md"
         exit 1;
