@@ -1,0 +1,27 @@
+name: Filter profanity for commit messages
+
+# This applies for all branches
+
+on:
+  pull_request:
+  pull_request_target:
+
+jobs:
+  check-commit-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Get latest commit message
+        id: get_commit
+        run: |
+          echo "COMMIT_MESSAGE=$(git log -1 --pretty=%B)" >> $GITHUB_ENV
+          echo "::notice title=Safety first!::Only the actions will be review the commit messages for safety features."
+
+      - name: Conditional step if commit message contains profanity
+        run: |
+          if [[ "$COMMIT_MESSAGE" =~ (attack[^*]|bail[^*]|bang[^*]|beast[^*]|boom[^*]|b[^*]tch|bull[^*]|cr[^*]p|curse[^*]|cursi[^*]|cyber[^*]|dirt[^*]|d[^*]ke|dope|elect[^*]|erect[^*]|errap[^*]|explod[^*]|explos[^*]|expos[^*]|f[^*]ck[^*]|f[^*]ght[^*]|flirt|f[^*]rt[^*]|genocid[^*]|hell|intox[^*]|kill[^*]|murder[^*]|pish[^*]|pollut[^*]|poop|p[^*]ss[^*]|punch[^*]|pvp|refus[^*]|riot[^*]|sex|sh[^*]t|sl[^*]b|slic[^*]|sl*rp|st*b|suck[^*]|troll[^*]|violat[^*]|violen[^*]|violet[^*]) ]]; then
+            echo "::error title=Profanity detected!::This update can't be used on this repository. For more information how to follow these Community Standards, see https://pennyball.stynegame.de/communityguide";
+            exit 1;
+          fi
